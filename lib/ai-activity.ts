@@ -41,6 +41,7 @@ export function messageToActivity(
     updatedAt?: Date;
     receivedAt: Date;
     tenantId: PopulatedTenant | { toString(): string };
+    agentAction?: string;
   }
 ): AIActivity | null {
   if (message.status === "pending") return null;
