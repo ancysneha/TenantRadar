@@ -13,6 +13,7 @@ export interface ITenant extends Document {
   rentStatus: RentStatus;
   rentDueDay: number;
   createdAt: Date;
+  updatedAt: Date;
 }
 
 const TenantSchema = new Schema<ITenant>(
@@ -30,7 +31,6 @@ const TenantSchema = new Schema<ITenant>(
       enum: ["paid", "pending", "overdue"],
       default: "pending",
     },
-    createdAt: { type: Date, default: Date.now },
   },
   { timestamps: true }
 );
