@@ -1,65 +1,65 @@
-# TenantRadar
+# 🏠 TenantRadar
 
-AI-powered property management for landlords. An autonomous AI agent handles tenant messages, maintenance requests, and rent reminders.
+TenantRadar is a Full-Stack Agentic AI Property Management Platform that helps landlords manage tenant communication, maintenance requests, and rent tracking through an intelligent automated agent.
 
-## Tech stack
+## 🚀 Features
 
-- Next.js 14 (App Router)
-- TypeScript
-- MongoDB + Mongoose
-- Tailwind CSS + shadcn/ui
-- NextAuth.js (credentials)
-- Google Gemini API
-- Nodemailer + Gmail OAuth2
+* AI-powered tenant message processing
+* Automated maintenance ticket creation
+* Plumbing, Electrical & HVAC issue detection
+* Ticket escalation for urgent issues
+* Conversation-based tenant communication
+* Rent tracking and reminders
+* Property & tenant management
+* Dashboard analytics and AI activity feed
 
-## Getting started
+## 🛠 Tech Stack
 
-1. Copy environment variables:
+* Next.js 14
+* TypeScript
+* MongoDB Atlas
+* Mongoose
+* NextAuth.js
+* Tailwind CSS
+* shadcn/ui
+
+## ⚙️ Getting Started
 
 ```bash
-cp .env.example .env.local
-```
-
-2. Install dependencies:
-
-```bash
+git clone https://github.com/ancysneha/TenantRadar.git
+cd TenantRadar
 npm install
-```
-
-3. Seed a landlord account (optional, or use `LANDLORD_EMAIL` / `LANDLORD_PASSWORD` in `.env.local`):
-
-```bash
-npx tsx scripts/seed-landlord.ts
-```
-
-4. Run the dev server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) and sign in at `/auth/signin`.
+Open:
 
-## Environment variables
+```text
+http://localhost:3000
+```
 
-| Variable | Description |
-|----------|-------------|
-| `MONGODB_URI` | MongoDB connection string |
-| `NEXTAUTH_SECRET` | NextAuth session secret |
-| `NEXTAUTH_URL` | App URL (e.g. `http://localhost:3000`) |
-| `GEMINI_API_KEY` | Google Gemini API key for the agent |
-| `GMAIL_CLIENT_ID` | Gmail OAuth client ID |
-| `GMAIL_CLIENT_SECRET` | Gmail OAuth client secret |
-| `GMAIL_REFRESH_TOKEN` | Gmail OAuth refresh token |
-| `LANDLORD_EMAIL` | Demo landlord email (credentials fallback) |
-| `LANDLORD_PASSWORD` | Demo landlord password |
-| `CRON_SECRET` | Optional bearer token for `/api/rent-reminder` |
+## 📌 Core Modules
 
-## API routes
+* Dashboard
+* Messages
+* Maintenance Tickets
+* Rent Management
+* Properties
+* Tenants
 
-- `POST /api/agent` — Process a message through the AI agent
-- `GET|POST /api/messages` — List / create messages
-- `GET|POST|DELETE /api/tenants` — Tenant CRUD
-- `GET|POST /api/properties` — Property CRUD
-- `GET|POST|PATCH /api/tickets` — Maintenance tickets
-- `POST /api/rent-reminder` — Cron endpoint for rent reminders
+## 🌐 Live Demo
+
+Coming Soon (Vercel Deployment)
+
+## 🔮 Future Enhancements
+
+* Email notifications
+* SMS alerts
+* Vendor management
+* Multi-landlord support
+
+## 👩‍💻 Author
+
+**Ancy Sneha**
+
+GitHub: https://github.com/ancysneha
